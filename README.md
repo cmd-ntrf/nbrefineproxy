@@ -4,7 +4,7 @@
 
 ![Screenshot](screenshot.png)
 
-If you have a JupyterHub deployment, nbrefineproxy can take advantage of JupyterHub's existing authenticator and spawner to launch RStudio in users' Jupyter environments. You can also run this from within Jupyter. Requires [nbserverproxy](https://github.com/jupyterhub/nbserverproxy).
+If you have a JupyterHub deployment, nbrefineproxy can take advantage of JupyterHub's existing authenticator and spawner to launch OpenRefine in users' Jupyter environments. You can also run this from within Jupyter. Requires [nbserverproxy](https://github.com/jupyterhub/nbserverproxy).
 
 ## Installation
 
