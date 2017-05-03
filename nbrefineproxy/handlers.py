@@ -101,7 +101,7 @@ class RefineProxyHandler(IPythonHandler):
         ]
 
         server_env = os.environ.copy()
-        server_env.update(env)
+        server_env.update(self.env)
 
         # Runs refine in background
         proc = sp.Popen(cmd, env=server_env)
