@@ -1,11 +1,11 @@
 import setuptools
 
 setuptools.setup(
-    name="nbrsessionproxy",
-    version='0.2.0',
-    url="https://github.com/ryanlovett/nbrsessionproxy",
-    author="Ryan Lovett",
-    description="Jupyter extensions to proxy RStudio's rsession",
+    name="nbrefineproxy",
+    version='0.1.0',
+    url="",
+    author=["Ryan Lovett", "Félix-Antoine Fortin"]
+    description="Jupyter extension to proxy OpenRefine session",
     packages=setuptools.find_packages(),
 	keywords=['Jupyter'],
 	classifiers=['Framework :: Jupyter'],

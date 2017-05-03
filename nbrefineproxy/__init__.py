@@ -1,17 +1,17 @@
-from nbrsessionproxy.handlers import setup_handlers
+from nbrefineproxy.handlers import setup_handlers
 
 # Jupyter Extension points
 def _jupyter_server_extension_paths():
     return [{
-        'module': 'nbrsessionproxy',
+        'module': 'nbrefineproxy',
     }]
 
 def _jupyter_nbextension_paths():
     return [{
         "section": "tree",
-        "dest": "nbrsessionproxy",
+        "dest": "nbrefineproxy",
         "src": "static",
-        "require": "nbrsessionproxy/tree"
+        "require": "nbrefineproxy/tree"
     }]
 
 def load_jupyter_server_extension(nbapp):
