@@ -10,5 +10,5 @@ setuptools.setup(
 	keywords=['Jupyter'],
 	classifiers=['Framework :: Jupyter'],
     install_requires=[ 'tornado', 'notebook', 'nbserverproxy' ],
-    package_data={'nbrsessionproxy': ['static/*']},
+    package_data={'nbrefineproxy': ['static/*']},
 )
