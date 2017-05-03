@@ -30,6 +30,9 @@ class RefineProxyHandler(IPythonHandler):
         'run',
         ''
     ]
+    env = {
+        'JAVA_OPTIONS' : "-Drefine.headless=true -Djava.security.egd=file:/dev/urandom"
+    }
 
     def initialize(self, state):
         self.state = state
@@ -94,11 +97,11 @@ class RefineProxyHandler(IPythonHandler):
         port = random_port()
 
         cmd = self.cmd + [
-            '--user-identity=' + username,
-            '--www-port=' + str(port)
+            '-p ' + str(port)
         ]
 
         server_env = os.environ.copy()
+        server_env.update(env)
 
         # Runs refine in background
         proc = sp.Popen(cmd, env=server_env)
