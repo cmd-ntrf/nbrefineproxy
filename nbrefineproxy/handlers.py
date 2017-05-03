@@ -27,8 +27,6 @@ class RefineProxyHandler(IPythonHandler):
     # refine command.
     cmd = [
         'refine',
-        'run',
-        ''
     ]
     env = {
         'JAVA_OPTIONS' : "-Drefine.headless=true -Djava.security.egd=file:/dev/urandom"
@@ -97,7 +95,7 @@ class RefineProxyHandler(IPythonHandler):
         port = random_port()
 
         cmd = self.cmd + [
-            '-p ' + str(port)
+            '-p', str(port)
         ]
 
         server_env = os.environ.copy()
